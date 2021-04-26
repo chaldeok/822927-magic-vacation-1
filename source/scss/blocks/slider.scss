@@ -47,7 +47,7 @@
     .slider__item-text {
       opacity: 1;
       transform: translateX(0);
-      transition-delay: .35s;
+      transition-delay: .76s;
       @media (max-width: $mobile) and (orientation: landscape) {
         align-self: flex-start;
       }
@@ -99,6 +99,10 @@
   }
 }
 
+.active .slider__item-title.accent-typography-active .text__word > span {
+  transform: translate3d(0, 20%, 0);
+}
+
 .slider__item-text {
   margin-top: 3.6rem;
   margin-bottom: 0;
@@ -107,7 +111,7 @@
   line-height: 2rem;
   opacity: 0;
   transform: translateX(30px);
-  transition: all .3s ease-in .2s;
+  transition: all .3s ease-in .6s;
 
   @media (min-width: $stop-scaling) {
     margin-top: 36px;

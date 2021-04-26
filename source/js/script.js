@@ -22,6 +22,7 @@ form();
 social();
 bodyOnload();
 
+// main
 const mainScreenTitleAnim = new AccentTypography(
     `.intro__title`,
     500,
@@ -32,10 +33,6 @@ setTimeout(() => {
   mainScreenTitleAnim.runAnim();
 }, 350);
 
-setTimeout(() => {
-  mainScreenTitleAnim.destroyAnim();
-}, 250);
-
 const mainScreenDateAnim = new AccentTypography(
     `.intro__date`,
     350,
@@ -44,11 +41,51 @@ const mainScreenDateAnim = new AccentTypography(
 );
 setTimeout(() => {
   mainScreenDateAnim.runAnim();
-}, 350);
+}, 1200);
 
+// history
+const historyScreenTitleAnim = new AccentTypography(
+    `.slider__item-title`,
+    250,
+    `accent-typography-active`,
+    `transform`
+);
 setTimeout(() => {
-  mainScreenDateAnim.destroyAnim();
-}, 250);
+  historyScreenTitleAnim.runAnim();
+}, 100);
+
+// prizes
+const prizesScreenTitleAnim = new AccentTypography(
+    `.prizes__title`,
+    250,
+    `accent-typography-active`,
+    `transform`
+);
+setTimeout(() => {
+  prizesScreenTitleAnim.runAnim();
+}, 100);
+
+// rules
+const rulesScreenTitleAnim = new AccentTypography(
+    `.rules__title`,
+    250,
+    `accent-typography-active`,
+    `transform`
+);
+setTimeout(() => {
+  rulesScreenTitleAnim.runAnim();
+}, 100);
+
+// game
+const gameScreenTitleAnim = new AccentTypography(
+    `.game__title`,
+    250,
+    `accent-typography-active`,
+    `transform`
+);
+setTimeout(() => {
+  gameScreenTitleAnim.runAnim();
+}, 100);
 
 const fullPageScroll = new FullPageScroll();
 fullPageScroll.init();

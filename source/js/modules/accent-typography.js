@@ -14,7 +14,7 @@ export default class AccentTypographyBuilder {
     const span = document.createElement(`span`);
     span.textContent = char;
     this._timeOffset = this.getRandomInteger(0, 600);
-    span.style.transition = `${this._property} ${this._duration}ms ease ${this._timeOffset}ms`;
+    span.style.transition = `${this._property} ${this._duration}ms ease-out ${this._timeOffset}ms`;
     return span;
   }
 
@@ -52,9 +52,6 @@ export default class AccentTypographyBuilder {
   }
 
   destroyAnim() {
-    if (!this._element) {
-      return;
-    }
     this._element.classList.remove(this._classForActivate);
   }
 
